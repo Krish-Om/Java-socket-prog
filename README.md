@@ -66,7 +66,3 @@ This project demonstrates a simple client-server application using Java sockets.
 4. Send messages from one client, and observe them being broadcasted to all other clients.
 5. Change the nickname using the `/nick new_nickname` command.
 6. Quit the chat using the `/quit` command.
-
-## License
-
-This project is licensed under the MIT License.
