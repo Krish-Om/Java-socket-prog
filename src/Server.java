@@ -80,7 +80,6 @@ public class Server implements Runnable {
                 String message;
                 while ((message = in.readLine())!= null){
                     if(message.startsWith("/nick ")){
-                        //TODO: handle nickname
                         String[] messageSplit = message.split("", 2);
                         if(messageSplit.length ==2){
                             broadcast(nickname+" renamed themselves to "+ messageSplit[1]);
@@ -93,7 +92,6 @@ public class Server implements Runnable {
                     }else if(message.startsWith("/quit")){
                         broadcast(nickname + ": left the chat");
                         shutDown();
-                        //TODO: handle quit
 
                     }else{
                         broadcast(nickname+ " : "+ message );
